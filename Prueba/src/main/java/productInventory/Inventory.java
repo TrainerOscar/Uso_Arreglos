@@ -12,7 +12,7 @@ public class Inventory {
     public boolean agregarProducto(Product producto) {
         for (Product product : productos) {
             if (product.getCodigo() == producto.getCodigo()) {
-                System.out.println("Error: El producto con el código " + producto.getCodigo() + " ya existe.");
+                System.out.println("Error,el producto con el código " + producto.getCodigo() + " ya existe.");
                 return false;
             }
         }
@@ -49,7 +49,7 @@ public class Inventory {
         } else {
             for (Product product : productos) {
                 product.mostrarInformacion();
-                System.out.println("---------------");
+        
             }
         }
     }
